@@ -1,8 +1,39 @@
-# React + Vite
+# Amazone Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Amazone clone built with React.js, Tailwind CSS, Node.js, Express, and MongoDB. This project replicates key features of the Amazon website, including authentication, shopping cart, and order management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* User Authentication: Sign up, login and logout functionality with JWT
+* Shoping Cart: Add and remove products from the cart, with real time updates.
+* Order Management: View order history.
+* Responsive Design: Fully responsive layout using Tailwind CSS.
+
+## Tech Stack
+
+* Frontend: React.js, Tailwind CSS, Redux Toolkit, MUI
+* Backend: Node Js, Express js, JWT Authentication
+* API: Integrated with the https://fakestoreapi.com/ for product data
+
+## Installation
+
+1. clone the repository:
+  * git clone https://github.com/Hawzz7/amzone_frontend.git
+
+2. Install all dependencies for both frontend and backend:
+   * cd amzone_frontend
+   * npm install
+
+3. Start the development server:
+   * npm run dev
+  
+  ## Deployment Link
+
+  * https://amzone-frontend.vercel.app/
+
+  ## Contact :-
+On email:
+* vicky.007.cr@gmail.com
+
+Or connect on linkedin:
+* Narendra Kumar Majhi :- https://www.linkedin.com/in/narendra-kumar-majhi-78518a206

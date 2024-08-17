@@ -1,8 +1,8 @@
 import axios from "axios";
 
+//This is the api for fetching products data
 export async function productsData() {
     const products = await axios.get(
-        // "https://fakestoreapi.in/api/products"
         "https://fakestoreapi.com/products"
         
     );

@@ -122,7 +122,7 @@ export const footerBottomItem = [
   },
   {
     _id: 1005,
-    title: "Sell on Walmart",
+    title: "Sell on Amazon",
     des: "Books, art & collectibles",
   },
   {
@@ -147,7 +147,7 @@ export const footerBottomItem = [
   },
   {
     _id: 1010,
-    title: "Get the Walmart App",
+    title: "Get the Amazon App",
     des: "Experienced Pros appiness Guarantee",
   },
   {
@@ -197,7 +197,7 @@ export const footerBottomItem = [
   },
   {
     _id: 1020,
-    title: "Walmart Business",
+    title: "Amazon Business",
     des: "Movies, TV & Celebrities",
   },
   {

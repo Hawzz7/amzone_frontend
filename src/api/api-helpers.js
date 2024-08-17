@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//For new user registration
 export const sendUserAuthReq = async (data) => {
   try {
     const res = await axios.post("/users/register", {
@@ -18,6 +19,8 @@ export const sendUserAuthReq = async (data) => {
   }
 };
 
+
+//Login request for already registered user
 export const sendUserLoginRequest = async (data) => {
   try {
     const res = await axios.post("/users/login", {
@@ -35,6 +38,8 @@ export const sendUserLoginRequest = async (data) => {
   }
 };
 
+
+//To logout
 export const sendUserLogOutRequest = async ({accessToken, userId}) => {
     try {
       const res = await axios.post("/users/logout", {
@@ -52,6 +57,8 @@ export const sendUserLogOutRequest = async ({accessToken, userId}) => {
     }
   };
 
+
+  //To send cart data and save it to database inside user data
   export const sendCartData = async ({ userId, product, address, phoneNumber }) => {
     console.log({userId, product});
     
@@ -77,16 +84,3 @@ export const sendUserLogOutRequest = async ({accessToken, userId}) => {
       throw error;
     }
   }
-//   const res = await axios
-//     .post("/users/register", {
-//       name: data.name,
-//       email: data.email,
-//       password: data.password,
-//     }).catch((err) => console.log(err));
-
-//   if (res.status !== 200 && res.status !== 201) {
-//     return console.log("Unexpected error occured");
-//   }
-
-//   const resData = await res.data;
-//   return resData;

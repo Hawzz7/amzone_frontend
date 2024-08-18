@@ -6,8 +6,8 @@ import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store.jsx";
 import { PersistGate } from "redux-persist/integration/react";
 import axios from 'axios';
-//"https://amazon-backend-kbd0.onrender.com"
-axios.defaults.baseURL = "http://localhost:8000"
+//"" "http://localhost:8000"
+axios.defaults.baseURL = "https://amazon-backend-kbd0.onrender.com"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>

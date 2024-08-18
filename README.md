@@ -19,6 +19,7 @@ A full-stack Amazon clone built with React.js, Tailwind CSS, Node.js, Express, a
 
 1. clone the repository:
   * git clone https://github.com/Hawzz7/amazon_frontend.git
+  * git clone https://github.com/Hawzz7/amazon-backend.git
 
 2. Install all dependencies for both frontend and backend:
    * cd amzone_frontend

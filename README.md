@@ -32,7 +32,7 @@ A full-stack Amazon clone built with React.js, Tailwind CSS, Node.js, Express, a
    * npm install
 3. ### Environment Variables: Create a .env file in the root of the project at backend file and add the following variables:
    * PORT=8000
-   * MONGODB_URI= your mongodb uri
+   * MONGODB_URI= "paste your mongodb URI"
    * CORS_ORIGIN=*
    * ACCESS_TOKEN_SECRET=123456
    * ACCESS_TOKEN_EXPIRY=1d

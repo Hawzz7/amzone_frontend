@@ -30,8 +30,15 @@ A full-stack Amazon clone built with React.js, Tailwind CSS, Node.js, Express, a
     ### Backend
    * cd amazon_backend
    * npm install
-
-4. Start the development server for both frontend and backend:
+3. ### Environment Variables: Create a .env file in the root of the project and add the following variables:
+   * PORT=8000
+   * MONGODB_URI= your mongodb uri
+   * CORS_ORIGIN=*
+   * ACCESS_TOKEN_SECRET=123456
+   * ACCESS_TOKEN_EXPIRY=1d
+   * REFRESH_TOKEN_SECRET=123456
+   * REFRESH_TOKEN_EXPIRY=10d
+5. Start the development server for both frontend and backend:
    * npm run dev
   
   ## Deployment Link

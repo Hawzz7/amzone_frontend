@@ -107,7 +107,7 @@ const SignUpPage = () => {
   return (
     <div className="w-full">
       <form
-        className="w-[370px] mx-auto flex flex-col items-center mx-5"
+        className="w-[370px] mx-auto flex flex-col items-center my-5"
         onSubmit={handleContinue}
       >
         <Link to="/">

@@ -81,7 +81,7 @@ const SignInPage = () => {
       ) : (
         <form
           onSubmit={handleContinue}
-          className="w-[350px] mx-auto flex flex-col items-center mt-5"
+          className="w-[350px] mx-auto flex flex-col items-center my-5"
         >
           <img className="w-24 mb-2" src={amazonLogo} alt="" />
 

@@ -1,6 +1,6 @@
-# Amazone Clone
+# Amazon Clone
 
-A full-stack Amazone clone built with React.js, Tailwind CSS, Node.js, Express, and MongoDB. This project replicates key features of the Amazon website, including authentication, shopping cart, and order management.
+A full-stack Amazon clone built with React.js, Tailwind CSS, Node.js, Express, and MongoDB. This project replicates key features of the Amazon website, including authentication, shopping cart, and order management.
 
 ## Features
 
@@ -17,19 +17,33 @@ A full-stack Amazone clone built with React.js, Tailwind CSS, Node.js, Express, 
 
 ## Installation
 
-1. clone the repository:
-  * git clone https://github.com/Hawzz7/amzone_frontend.git
+1. Clone the repository:
+   ### Frontend
+   * git clone https://github.com/Hawzz7/amazon_frontend.git
+    ### Backend
+   * git clone https://github.com/Hawzz7/amazon-backend.git
 
 2. Install all dependencies for both frontend and backend:
-   * cd amzone_frontend
+    ### Frontend
+   * cd amazon_frontend
    * npm install
-
-3. Start the development server:
+    ### Backend
+   * cd amazon_backend
+   * npm install
+3. ### Environment Variables: Create a .env file in the root of the project at backend file and add the following variables:
+   * PORT=8000
+   * MONGODB_URI= "paste your mongodb URI"
+   * CORS_ORIGIN=*
+   * ACCESS_TOKEN_SECRET=123456
+   * ACCESS_TOKEN_EXPIRY=1d
+   * REFRESH_TOKEN_SECRET=123456
+   * REFRESH_TOKEN_EXPIRY=10d
+4. Start the development server for both frontend and backend:
    * npm run dev
   
   ## Deployment Link
 
-  * https://amzone-frontend.vercel.app/
+  * https://amzone-frontend.vercel.app
 
   ## Contact :-
 On email:

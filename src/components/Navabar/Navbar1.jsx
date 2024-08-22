@@ -2,13 +2,19 @@ import amazonLogo from "../../assets/amazon-logo-white.png";
 import SearchIcon from "@mui/icons-material/Search";
 import CartIcon from "@mui/icons-material/ProductionQuantityLimits";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setSearchTerm } from "../../redux/amazonSlice";
+import { useState } from "react";
 
 const Navbar1 = () => {
+  const dispatch = useDispatch();
+  const [searchInput, setSearchInput] = useState("");
   const products = useSelector((state) => state.amazonReducer.products);
   const userInfo = useSelector((state) => state.amazonReducer.userInfo);
 
-
+  const handleSearch = () => {
+    dispatch(setSearchTerm(searchInput)); // Dispatch search term to Redux
+  };
 
   return (
     <nav>
@@ -45,9 +51,13 @@ const Navbar1 = () => {
             className="w-full rounded-md p-2"
             type="search"
             placeholder="Search at Amazon"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
           />
           <button
-          className="absolute right-0 bg-[#f8a932] py-[7px] px-[8px] rounded-md">
+            onClick={handleSearch}
+            className="absolute right-0 bg-[#f8a932] py-[7px] px-[8px] rounded-md"
+          >
             <SearchIcon />
           </button>
         </div>

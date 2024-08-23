@@ -37,7 +37,7 @@ const OrdersPage = () => {
                 Date: {new Date(purchase.createdAt).toLocaleDateString()}
               </p>
               <p className="text-gray-600">
-                Total Amount: <span className="text-black font-semibold">${purchase.total}</span>
+                Total Amount: <span className="text-black font-semibold">${purchase.total.toFixed(2)}</span>
               </p>
               <p className="text-gray-600">
                 Delivery Address: {purchase.address}

@@ -57,7 +57,6 @@ export const sendUserLogOutRequest = async ({accessToken, userId}) => {
     }
   };
 
-
   //To send cart data and save it to database inside user data
   export const sendCartData = async ({ userId, product, address, phoneNumber }) => {
     console.log({userId, product});

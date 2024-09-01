@@ -58,7 +58,7 @@ const SignInPage = () => {
         navigate("/");
       }
     } catch (error) {
-      setErrorMsg("Invalid Password");
+      setErrorMsg("An unexpected error occurred");
     }
   };
 
